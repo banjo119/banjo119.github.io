@@ -2,6 +2,8 @@ const gamePane = document.getElementById("gameGrid");
 const gameNames = [
     "Blue",
     "Crystal",
+    "HeartGold",
+    "SoulSilver",
     "Emerald",
     "RandomEmerald",
     "FireRed",
