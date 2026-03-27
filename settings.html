@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./ColorPicker/coloris.css">
+        <script src="./ColorPicker/coloris.js"></script>
+        <script>
+            Coloris({alpha:false});
+        </script>
+        <title>BenIGame</title>
+    </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ17WT7PW9"></script>
+    <body id="background" style="background-color: #D7B993;">
+
+        <span id="topBar" style="background-color: #855A37; border-bottom-color: white;">
+            <img src="Logo.png" alt="BeniGames" class="logo">
+            <h1>Settings</h1>
+        </span>
+
+        <div class="wrap">
+            <div class="sidebar" id="sideBar" style="background-color: #855A37;">
+                <div class="item" onclick="location.href='index.html'"><span class="icon"><img src="Logo.png"></span><span class="label">Main Menu</span></div>
+                <div class="item"><span class="icon"><img src="Settings.png"></span><span class="label">Settings</span></div>
+                <div class="item" onclick="location.href='Games/Mario/Mario.html'"><span class="icon"><img src="Mario.png"></span><span class="label">Mario</span></div>
+                <div class="item" onclick="location.href='Games/Pokemon/Pokemon.html'"><span class="icon"><img src="Pokemon.png"></span><span class="label">Pokemon</span></div>
+                <div class="item" onclick="location.href='Games/Zelda/Zelda.html'"><span class="icon"><img src="Zelda.png"></span><span class="label">Zelda</span></div>
+                <div class="item" onclick="location.href='Games/Flash/Flash.html'"><span class="icon"><img src="Flash.png"></span><span class="label">Flash</span></div>
+            </div>
+        </div>
+
+        <div class="Content">
+            <h1><strong>Theme</strong></h1>
+            <h2>Main Color</h2>
+            <input type="text" id="MainColor" data-coloris>
+            <h2>Secondary Color</h2>
+            <input type="text" id="SecondaryColor" data-coloris>
+            <h2>Accent Color</h2>
+            <input type="text" id="AccentColor" data-coloris>
+            <h2>Font Color</h2>
+            <input type="text" id="FontColor" data-coloris>
+            <button class="ColorApply" id="ApplyColor">Apply</button>
+        </div>
+    </body>
+</html>
+
+<script src="settings.js"></script>
+<script src="styling.js"></script>
